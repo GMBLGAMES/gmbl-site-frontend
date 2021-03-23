@@ -1,25 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Login from './Login';
 import SignUp from './SignUp';
 
-export default class Home {
-  constructor(props) {
-    this.isUser = false;
-  }
-  changeToLogin(){
-    this.isUser = true;
-  }
-  changeToSignIn(){
-    this.isUser = false
-  }
-  render(){
-    return !this.isUser ? (<>
+const Home = () => (
+  <>
       <p>
   <a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
+    Login
   </a>
   <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-bs-target
+    Sign Up
   </button>
 </p>
 <div className="collapse" id="collapseExample">
@@ -28,8 +18,6 @@ export default class Home {
   </div>
 </div>
 </>
-    ) : (
+);
 
-    )
-  }
-}
+export default Home;
