@@ -1,10 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import Navbar from './commons/Navbar';
-import Sidebar from './commons/Sidebar';
-import Footer from './commons/Footer';
+import Header from './commons/Header';
+// import Sidebar from './commons/Sidebar';
+// import Footer from './commons/Footer';
 import Main from './commons/Main';
-import Home from './pages';
+// import Home from './pages';
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -12,10 +12,8 @@ function App() {
     <div className="App">
       <Router>
         <>
-          <Navbar/>
-          <Sidebar/>
+          <Header/>
           <Main/>
-          <Footer/>
         </>
       </Router>
     </div>

@@ -14,13 +14,15 @@ function Games() {
   const [data, setData] = useState({ games: []});
   useEffect(async () => {
 
-    const result =
+    const result = []
   })
 
   return (
     data.games.map(game => (
       <li key={game.id}>
-        <
+        <>
+
+        </>
       </li>
     ))
   )
